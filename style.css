@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,*,html {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(17, 17, 17);
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav-brand {
+    color: rgb(233, 180, 47);
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.extra-nav i {
+    font-size: 30px;
+}
+
+.hamburger-menu {
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(233, 180, 47);
+}
+
+
+/* home */
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    gap: 10rem;
+}
+.perkenalan {
+    padding: 0;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perkenalan h1 {
+    font-size: 40px;
+}
+
+.perkenalan p {
+    color: rgb(240, 197, 90);   
+}
+
+.profile img {
+    border-radius: 100%;
+
+}
+
+/* multi type */
+.multi-type .text {
+    position: relative;
+    font-size: 20px;
+}
+
+.multi-type .text.second {
+    color: rgb(243, 204, 104);
+}
+
+.text.second:before {
+    z-index: 1;
+    content: "";
+    background-color: rgb(17, 17, 17);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    border-left: 2px solid;
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* responsive navbar dan content 1 */
+@media (max-width: 480px) {
+
+    /* CONTENT 1 */
+    .container1 {
+        flex-direction: column;
+    }
+    /* NAVBAR */
+    .hamburger-menu {
+        display: inline-block;
+    }
+
+    .extra-nav {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .multi-type {
+        position: relative;
+        z-index: 1;
+    }
+
+    nav .navbar-nav {
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        left: -100%;
+        width: 23rem;
+        height: 100vh;
+        background-color: white;
+        transition: 0.3s;
+    }
+    
+    nav .navbar-nav.active {
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
