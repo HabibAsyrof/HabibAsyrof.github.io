@@ -150,8 +150,14 @@ a:hover {
         left: -100%;
         width: 23rem;
         height: 100vh;
-        background-color: rgb(17, 17, 17);
+        background-color: rgb(255, 255, 255);
         transition: 0.3s;
+    }
+
+    a {
+        background-color: rgb(255, 254, 254);
+        color: black;
+        font-size: 23px;
     }
     
     nav .navbar-nav.active {
