@@ -95,7 +95,6 @@ a:hover {
 .text.second:before {
     z-index: 1;
     content: "";
-    background-color: rgb(17, 17, 17);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -138,14 +137,9 @@ a:hover {
         padding: 10px;
     }
 
-    .multi-type {
-        position: relative;
-        z-index: 1;
-    }
-
     nav .navbar-nav {
         position: absolute;
-        z-index: 10;
+        z-index: 999 !important;
         top: 100%;
         left: -100%;
         width: 23rem;
@@ -165,5 +159,10 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .multi-type {
+        position: relative;
+        z-index: 1 !important;
     }
 }
