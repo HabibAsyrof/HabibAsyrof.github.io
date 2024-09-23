@@ -160,8 +160,10 @@ a:hover {
     nav .navbar-nav.active {
         left: 0;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        gap: 0;
+        padding-left: 10px;
+        padding-top: 10px;
+        text-decoration: underline;
     }
 
     .multi-type {
@@ -169,3 +171,51 @@ a:hover {
         z-index: 1 !important;
     }
 }
+
+/* content 2 */
+.content2 {
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.isi-tentang {
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+}
+
+.isi-pendidikan p {
+    width: 500px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 480px) {
+    .isi-tentang {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .isi-pendidikan p {
+        width: 300px;
+        text-align: center;
+    }
+
+    .judul-pendidikan {
+        display: flex;
+        justify-content: center;
+    }
+}
+
