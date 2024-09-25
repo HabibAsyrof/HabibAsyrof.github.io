@@ -233,4 +233,8 @@ a:hover {
         flex-direction: column;
         height: max-content;
     }
+    .card1 {
+        width: 350px;
+        height: 350px;
+    }
 }
