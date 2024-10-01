@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasy | Portofolio</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -16,12 +17,12 @@
             <div class="nav-brand">
                 <h1>HasyMars();</h1>
             </div>
-            <div class="navbar-nav">
-                <a href="#content1">Home</a>
-                <a href="#content2">About</a>
-                <a href="">contact</a>
+            <div class="navbar-nav text-white">
+                <a href="#content1" class="group">Home <hr class="w-0 ransition-all duration-700 border-white group-hover:w-full"></a>
+                <a href="#content2" class="group">About <hr class="w-0 transition-all duration-700 border-white group-hover:w-full"></a>
+                <a href="" class="group">contact <hr class="w-0 transition-all duration-700 border-white group-hover:w-full"></a>
             </div>
-            <div class="extra-nav"><a href="https://github.com/HabibAsyrof"><i class="fa-brands fa-github"></i></a>
+            <div class="extra-nav"><a href="https://github.com/HabibAsyrof"><i class="fa-brands fa-github text-white"></i></a>
             </div>
             <div id="hamburger-menu" class="hamburger-menu">
                 <i class="fa-solid fa-bars"></i>
@@ -62,22 +63,22 @@
         </script>
     </div>
     <div class="content2" id="content2">
-        <div class="judul">
+        <div class="judul" data-aos="fade-up">
             <p>S E R V I C E S</p>
             <h3>Specialized In</h3>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-right">
             <div class="card1">
                 <i class="fa-brands fa-figma"></i>
                 <h2>UI/UX Design</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, in.</p>
             </div>
-            <div class="card1">
+            <div class="card1" data-aos="fade-up">
                 <i class="fa-brands fa-html5"></i>
                 <h2>HTML & CSS</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, in.</p>
             </div>
-            <div class="card1">
+            <div class="card1" data-aos="fade-left">
                 <i class="fa-brands fa-laravel"></i>
                 <h2>Laravel</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, in.</p>
@@ -119,6 +120,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="content4 h-screen bg-zinc-100 mt-40" >
+
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
